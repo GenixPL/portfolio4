@@ -1,5 +1,5 @@
 <template>
-    <h1>
+    <h1 id="name-header">
         łukASZ<br/>
         NieDZiAłek
     </h1>
@@ -12,8 +12,8 @@
 </script>
 
 <style scoped>
-    h1 {
-        padding-top: 32pt;
+    #name-header {
         font-family: kontanter, sans-serif;
+        margin: auto; /* this will center it inside its parent */
     }
 </style>

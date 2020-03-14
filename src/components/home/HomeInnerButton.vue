@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <router-link class="routerLink" :to=path>
-            <h3>{{title}}</h3>
-        </router-link>
-    </div>
+    <router-link class="routerLink" :to=path>
+        <h3 id="inner-button-text">
+            {{title}}
+        </h3>
+    </router-link>
 </template>
 
 <script>
@@ -17,23 +17,15 @@
 </script>
 
 <style scoped>
-    div {
-        margin: 16pt;
-        background: black;
-        width: 104pt;
-        justify-content: center;
-    }
-
-    h3 {
-        font-family: etna, sans-serif;
+    #inner-button-text {
+        font-family: cp-mono, sans-serif;
         letter-spacing: 2pt;
-        margin-right: -2pt;
-        padding: 8pt;
+        padding: 8pt 6pt 8pt 8pt; /* -2pt to compensate letter-spacing */
+        margin: 16pt;
 
         color: white;
+        background-color: black;
     }
 
-    .routerLink{
-        text-decoration: none;
-    }
+
 </style>

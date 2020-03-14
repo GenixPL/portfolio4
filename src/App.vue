@@ -1,9 +1,7 @@
 <template>
-    <div id="dimScreen">
         <div id="app">
             <router-view></router-view>
         </div>
-    </div>
 </template>
 
 <script>
@@ -23,20 +21,14 @@
         text-align: center;
     }
 
-    #dimScreen {
-        position: fixed;
-        padding: 0;
-        margin: 0;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #ffc107;
+    /* this removes underline from each of them links in app */
+    .routerLink {
+        text-decoration: none;
     }
 
     @font-face {
-        font-family: 'etna';
-        src: url(fonts/Etna.otf);
+        font-family: 'cp-mono';
+        src: url(fonts/CPMono.otf);
     }
 
     @font-face {
@@ -45,7 +37,7 @@
     }
 
     @font-face {
-        font-family: 'Prime';
+        font-family: 'prime';
         src: url(fonts/Prime.otf);
     }
 </style>

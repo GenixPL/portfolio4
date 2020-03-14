@@ -1,11 +1,7 @@
 <template>
-    <div>
-        <div id="div-top">
-            <HomeHeader/>
-        </div>
-        <div id="div-center">
-            <HomeInnerButtons/>
-        </div>
+    <div class="main-container">
+        <HomeHeader />
+        <HomeInnerButtons />
     </div>
 </template>
 
@@ -23,19 +19,10 @@
 </script>
 
 <style scoped>
-    #div-top {
-        position: absolute;
-        display: flex;
+    .main-container {
         width: 100vw;
-        justify-content: center;
-    }
-
-    #div-center {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 100vh;
-        width: 100vw;
+        display: grid;
+        grid-template-rows: 72pt auto 72pt;
     }
 </style>
