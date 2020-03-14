@@ -18,9 +18,13 @@
 </script>
 
 <style scoped>
+    @media (min-width: 408pt) {
+        div {
+            display: flex;
+        }
+    }
+
     div {
-        display: flex;
-        background: aqua;
-        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 </style>

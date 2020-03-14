@@ -11,7 +11,6 @@
 
 <script>
     import HomeHeader from "@/components/home/HomeHeader";
-
     import HomeInnerButtons from "@/components/home/HomeInnerButtons";
 
     export default {
