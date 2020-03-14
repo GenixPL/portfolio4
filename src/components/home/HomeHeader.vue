@@ -13,6 +13,7 @@
 
 <style scoped>
     h1 {
-        font-family: kontanter;
+        padding-top: 32pt;
+        font-family: kontanter, sans-serif;
     }
 </style>
