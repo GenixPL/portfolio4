@@ -5,10 +5,18 @@
             NieDZiAłek
         </h1>
         <div id="icons-container">
-            <div id="github-icon" class="outer-button-icon"></div>
-            <div id="yt-icon" class="outer-button-icon"></div>
-            <div id="rive-icon" class="outer-button-icon"></div>
-            <div id="gg-icon" class="outer-button-icon"></div>
+            <a href="https://github.com/GenixPL" target="_blank">
+                <div id="github-icon" class="outer-button-icon"></div>
+            </a>
+            <a href="https://www.youtube.com/channel/UC8iFSZEpTSbq8ActXXbvyfw?view_as=subscriber" target="_blank">
+                <div id="yt-icon" class="outer-button-icon"></div>
+            </a>
+            <a href="https://rive.app/a/Genix/files/recent/all" target="_blank">
+                <div id="rive-icon" class="outer-button-icon"></div>
+            </a>
+            <a href="https://www.goodreads.com/user/show/86850107-lukasz" target="_blank">
+                <div id="gg-icon" class="outer-button-icon"></div>
+            </a>
         </div>
     </div>
 </template>
