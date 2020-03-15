@@ -1,5 +1,5 @@
 <template>
-    <div class="main-container">
+    <div id="home-container">
         <HomeHeader />
         <HomeInnerButtons />
     </div>
@@ -19,10 +19,15 @@
 </script>
 
 <style scoped>
-    .main-container {
+    #home-container {
         width: 100vw;
         height: 100vh;
+
         display: grid;
         grid-template-rows: 72pt auto 72pt;
+
+        background-image: url("../../assets/background.jpg");
+        background-size: cover;
+        background-position: center;
     }
 </style>

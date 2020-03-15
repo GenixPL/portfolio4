@@ -13,6 +13,9 @@
 
 <style scoped>
     #name-header {
+        color: white;
+        letter-spacing: 4pt;
+        padding-left: 4pt; /* to compensate for letter spacing */
         font-family: kontanter, sans-serif;
         margin: auto; /* this will center it inside its parent */
     }
