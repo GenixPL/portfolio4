@@ -24,11 +24,11 @@
     #inner-button-container {
         width: 116pt;
         height: 116pt;
-        
+
         background-image: url("../../assets/home/bordered_box.svg");
         background-size: contain;
 
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: center;
     }
