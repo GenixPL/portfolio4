@@ -37,7 +37,7 @@
         display: grid;
         grid-template-rows: 72pt auto 72pt;
 
-        background-image: url("../../assets/background.jpg");
+        background-image: url("../../assets/home/background.jpg");
         background-size: cover;
         background-position: center;
     }

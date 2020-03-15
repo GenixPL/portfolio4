@@ -24,8 +24,9 @@
     #inner-button-container {
         width: 116pt;
         height: 116pt;
-
-        background-color: black;
+        
+        background-image: url("../../assets/home/bordered_box.svg");
+        background-size: contain;
 
         display:flex;
         align-items: center;
