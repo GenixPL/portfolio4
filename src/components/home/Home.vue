@@ -19,13 +19,30 @@
 </script>
 
 <style scoped>
-    @media (max-height: 520pt) {
+
+    /* good width & good height-> min h can be smaller */
+    @media (min-height: 328pt) and (min-width: 412pt) {
+        #home-container {
+            height: 100vh;
+        }
+    }
+
+    /* bad width & bad height */
+    @media (max-height: 520pt) and (max-width: 412pt) {
         #home-container {
             height: 520pt;
         }
     }
 
-    @media (min-height: 520pt) {
+    /* good width, but bad height*/
+    @media (max-height: 328pt) and (min-width: 412pt) {
+        #home-container {
+            height: 328pt;
+        }
+    }
+
+    /* good height, but bad width */
+    @media (min-height: 520pt) and (max-width: 412pt){
         #home-container {
             height: 100vh;
         }
@@ -35,7 +52,7 @@
         width: 100vw;
 
         display: grid;
-        grid-template-rows: 72pt auto 72pt;
+        grid-template-rows: 108pt auto 108pt;
 
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/home/background.jpg");
         background-size: cover;
