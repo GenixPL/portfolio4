@@ -31,6 +31,7 @@
     }
 
     #inner-buttons-div {
+        padding: 16pt;
         display: grid;
         margin: auto;
         grid-gap: 16pt;
