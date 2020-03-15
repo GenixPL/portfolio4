@@ -1,7 +1,7 @@
 <template>
     <div id="home-container">
-        <HomeHeader />
-        <HomeInnerButtons />
+        <HomeHeader/>
+        <HomeInnerButtons/>
     </div>
 </template>
 
@@ -19,9 +19,20 @@
 </script>
 
 <style scoped>
+    @media (max-height: 520pt) {
+        #home-container {
+            height: 520pt;
+        }
+    }
+
+    @media (min-height: 520pt) {
+        #home-container {
+            height: 100vh;
+        }
+    }
+
     #home-container {
         width: 100vw;
-        height: 100vh;
 
         display: grid;
         grid-template-rows: 72pt auto 72pt;

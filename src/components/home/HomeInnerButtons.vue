@@ -18,15 +18,21 @@
 </script>
 
 <style scoped>
-    @media (min-width: 408pt) {
+    @media (min-width: 412pt) {
         #inner-buttons-div {
-            display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
     }
 
+    @media (max-width: 412pt) {
+        #inner-buttons-div {
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+    }
+
     #inner-buttons-div {
+        display: grid;
         margin: auto;
-        background: #ffc107;
+        grid-gap: 16pt;
     }
 </style>
