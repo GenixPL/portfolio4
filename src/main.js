@@ -23,6 +23,11 @@ const router = new Router({
     mode: 'history',
 });
 
+router.beforeEach((to, from, next) => {
+    document.title = "Niedziałek Łukasz | Portfolio"
+    next()
+})
+
 new Vue({
     render: h => h(App),
     router: router,
