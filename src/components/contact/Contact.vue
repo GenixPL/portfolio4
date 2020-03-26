@@ -1,10 +1,17 @@
 <template>
-    <h1>CONTACT</h1>
+    <div>
+        <NavBar :enlarged-position="4"/>
+    </div>
 </template>
 
 <script>
+    import NavBar from "@/components/navBar/NavBar";
+
     export default {
-        name: "Contact"
+        name: "Contact",
+        components: {
+            NavBar,
+        },
     }
 </script>
 
