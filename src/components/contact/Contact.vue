@@ -6,8 +6,7 @@
             height:100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-">
+            justify-content: center;">
                 <div id="contact-me-text">CONTACT ME</div>
                 <div class="contact-info-text">If you have any questions or offers, please feel free to write.</div>
                 <dic id="email-text">lhniedzialek@gmail.com</dic>
@@ -26,6 +25,8 @@
         },
     }
 </script>
+
+<!-- TODO possibly add emailing form-->
 
 <style scoped>
     #contact-container {
