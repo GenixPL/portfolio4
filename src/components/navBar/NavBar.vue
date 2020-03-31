@@ -1,5 +1,5 @@
 <template>
-    <div id="main-container">
+    <div id="navBar-container">
         <router-link class="routerLink" to="/">
             <div class="page-text" v-bind:class="[ enlargedPosition === 1 ? 'enlarged-text' : '']">HOME</div>
         </router-link>
@@ -28,17 +28,26 @@
 </script>
 
 <style scoped>
-    #main-container {
+    @media (min-width: 360pt) {
+        #navBar-container {
+            display: flex;
+        }
+    }
+
+    #navBar-container {
         background-color: #ffc107;
-        padding: 16pt;
-        display: flex;
-        justify-content: space-evenly;
+
         align-items: center;
+        justify-content: center;
+
+        padding-top: 8pt;
+        padding-bottom: 8pt;
     }
 
     .page-text {
         font-family: cp-mono, serif;
         color: black;
+        padding: 4pt 16pt;
     }
 
     .enlarged-text {
