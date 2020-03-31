@@ -9,7 +9,7 @@
             justify-content: center;">
                 <div id="contact-me-text">CONTACT ME</div>
                 <div class="contact-info-text">If you have any questions or offers, please feel free to write.</div>
-                <dic id="email-text">lhniedzialek@gmail.com</dic>
+                <div id="email-text">lhniedzialek@gmail.com</div>
             </div>
         </div>
     </div>
@@ -69,7 +69,6 @@
         font-size: 16pt;
         font-weight: bold;
         letter-spacing: 2pt;
-        margin-left: -2pt;
     }
 
 

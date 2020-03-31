@@ -37,6 +37,8 @@
     #navBar-container {
         background-color: #ffc107;
 
+        width: 100vw;
+
         align-items: center;
         justify-content: center;
 

@@ -18,6 +18,8 @@
     }
 </script>
 
+<!-- TODO correct backup fonts in the whole project -->
+
 <style scoped>
 
     /* good width & good height-> min h can be smaller */
