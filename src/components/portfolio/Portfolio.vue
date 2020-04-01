@@ -2,7 +2,6 @@
     <div>
 
         <NavBar :enlarged-position="3"
-                ref="portfolioNavBar"
                 style="position: sticky; top: 0;"/>
 
         <div id="groups-container">
@@ -30,8 +29,6 @@
 
     </div>
 </template>
-
-<!-- TODO move navBar above the rest -->
 
 <script>
     import NavBar from "@/components/navBar/NavBar";

@@ -7,7 +7,9 @@
             display: flex;
             flex-direction: column;
             justify-content: center;">
-                <div id="contact-me-text">CONTACT ME</div>
+                <div style="padding-left: 4pt">
+                    <div id="contact-me-text">CONTACT ME</div>
+                </div>
                 <div class="contact-info-text">If you have any questions or offers, please feel free to write.</div>
                 <div id="email-text">lhniedzialek@gmail.com</div>
             </div>
@@ -26,11 +28,12 @@
     }
 </script>
 
-<!-- TODO possibly add emailing form-->
+<!-- TODO possibly add emailing form -->
+<!-- TODO add copy to clipboard -->
 
 <style scoped>
     #contact-container {
-        width: 100vw;
+        width: 100%;
 
         height: 100%;
         align-self: stretch;
@@ -46,7 +49,6 @@
         font-size: 32pt;
         font-weight: bold;
         letter-spacing: 4pt;
-        margin-right: -4pt;
     }
 
     .contact-info-text {
