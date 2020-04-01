@@ -24,6 +24,7 @@
     /* this removes underline from each of them links in app */
     .routerLink {
         text-decoration: none;
+        color: black;
     }
 
     @font-face {

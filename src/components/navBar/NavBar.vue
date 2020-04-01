@@ -50,6 +50,12 @@
         font-family: cp-mono, serif;
         color: black;
         padding: 4pt 16pt;
+
+        transition: color 0.5s ease;
+    }
+
+    .page-text:hover {
+        color: #404040;
     }
 
     .enlarged-text {

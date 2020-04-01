@@ -5,6 +5,11 @@ import Home from "@/components/home/Home";
 import Resume from "@/components/resume/Resume";
 import Portfolio from "@/components/portfolio/Portfolio";
 import Contact from "@/components/contact/Contact";
+import DevelopedApps from "@/components/developedApps/DevelopedApps";
+import Algorithms from "@/components/algorithms/Algorithms";
+import Hackathons from "@/components/hackathons/Hackathons";
+import FlutterStuff from "@/components/flutterStuff/FlutterStuff";
+import OtherArticles from "@/components/otherArticles/OtherArticles";
 
 
 // Vue.config.productionTip = false
@@ -16,6 +21,11 @@ const routes = [
     {path: '/resume', component: Resume},
     {path: '/portfolio', component: Portfolio},
     {path: '/contact', component: Contact},
+    {path: '/developed-apps', component: DevelopedApps},
+    {path: '/algorithms', component: Algorithms},
+    {path: '/hackathons', component: Hackathons},
+    {path: '/flutter-stuff', component: FlutterStuff},
+    {path: '/other-articles', component: OtherArticles},
 ];
 
 const router = new Router({

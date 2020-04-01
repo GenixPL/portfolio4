@@ -7,23 +7,34 @@
         <div id="groups-container">
             <div class="group-container" id="group-1">
                 <div class="group-header">DEVELOPED APPS</div>
-                <div class="download-button">SEE MORE</div>
+                <router-link class="routerLink" to='/developed-apps'>
+                    <div class="download-button">SEE MORE</div>
+                </router-link>
             </div>
             <div class="group-container" id="group-2">
                 <div class="group-header">ALGORITHMS</div>
-                <div class="download-button">SEE MORE</div>
+                <router-link class="routerLink" to='/algorithms'>
+                    <div class="download-button">SEE MORE</div>
+                </router-link>
             </div>
             <div class="group-container" id="group-3">
                 <div class="group-header">HACKATHONS</div>
-                <div class="download-button">SEE MORE</div>
+                <router-link class="routerLink" to='/hackathons'>
+                    <div class="download-button">SEE MORE</div>
+                </router-link>
             </div>
             <div class="group-container" id="group-4">
                 <div class="group-header">FLUTTER STUFF</div>
-                <div class="download-button">SEE MORE</div>
+                <router-link class="routerLink" to='/flutter-stuff'>
+                    <div class="download-button">SEE MORE</div>
+                </router-link>
+
             </div>
             <div class="group-container" id="group-5">
                 <div class="group-header">OTHER</div>
-                <div class="download-button">SEE MORE</div>
+                <router-link class="routerLink" to='/other-articles'>
+                    <div class="download-button">SEE MORE</div>
+                </router-link>
             </div>
         </div>
 
