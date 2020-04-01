@@ -7,23 +7,23 @@
         <div id="groups-container">
             <div class="group-container" id="group-1">
                 <div class="group-header">DEVELOPED APPS</div>
-                <div class="group-button">SEE MORE</div>
+                <div class="download-button">SEE MORE</div>
             </div>
             <div class="group-container" id="group-2">
                 <div class="group-header">ALGORITHMS</div>
-                <div class="group-button">SEE MORE</div>
+                <div class="download-button">SEE MORE</div>
             </div>
             <div class="group-container" id="group-3">
                 <div class="group-header">HACKATHONS</div>
-                <div class="group-button">SEE MORE</div>
+                <div class="download-button">SEE MORE</div>
             </div>
             <div class="group-container" id="group-4">
                 <div class="group-header">FLUTTER STUFF</div>
-                <div class="group-button">SEE MORE</div>
+                <div class="download-button">SEE MORE</div>
             </div>
             <div class="group-container" id="group-5">
                 <div class="group-header">OTHER</div>
-                <div class="group-button">SEE MORE</div>
+                <div class="download-button">SEE MORE</div>
             </div>
         </div>
 
@@ -86,7 +86,7 @@
         margin-bottom: 12pt;
     }
 
-    .group-button {
+    .download-button {
         background: #ffc107;
         display: inline;
         align-self: center;
@@ -99,7 +99,7 @@
         transition: background 0.5s ease;
     }
 
-    .group-button:hover {
+    .download-button:hover {
         background: #9e7700;
     }
 

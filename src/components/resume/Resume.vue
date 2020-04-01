@@ -3,7 +3,13 @@
         <NavBar :enlarged-position="2"/>
         <div id="wip-text">WORK IN PROGRESS</div>
         <div id="second-text">You can download pdf version for now</div>
-        <div class="group-button" v-on:click="downloadCv">DOWNLOAD</div>
+
+        <a class="download-button"
+           href="https://genixpl.github.io/download/lukasz-niedzialek-cv.pdf"
+           download
+        >
+            DOWNLOAD
+        </a>
     </div>
 </template>
 
@@ -15,11 +21,6 @@
         components: {
             NavBar,
         },
-        methods: {
-            downloadCv() {
-                console.log('download');
-            }
-        }
     }
 </script>
 
@@ -38,11 +39,13 @@
         margin-bottom: 8pt;
     }
 
-    .group-button {
+    .download-button {
         background: #ffc107;
         display: inline;
         align-self: center;
 
+        color: black;
+        text-decoration: none;
         font-size: 16pt;
         font-family: cp-mono, serif;
 
@@ -51,7 +54,7 @@
         transition: background 0.5s ease;
     }
 
-    .group-button:hover {
+    .download-button:hover {
         background: #9e7700;
     }
 
