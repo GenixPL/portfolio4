@@ -38,6 +38,8 @@
         background-color: #ffc107;
 
         width: 100%;
+        position: sticky;
+        top: 0;
 
         align-items: center;
         justify-content: center;

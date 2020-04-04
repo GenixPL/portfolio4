@@ -10,6 +10,12 @@ import Algorithms from "@/components/algorithms/Algorithms";
 import Hackathons from "@/components/hackathons/Hackathons";
 import FlutterStuff from "@/components/flutterStuff/FlutterStuff";
 import OtherArticles from "@/components/otherArticles/OtherArticles";
+import Placelytics from "@/components/developedApps/placelytics/Placelytics";
+import Pictile from "@/components/developedApps/pictile/Pictile";
+import TheHardestGame from "@/components/developedApps/thg/TheHardestGame";
+import Quarantino from "@/components/developedApps/quarantino/Quarantino";
+import Website from "@/components/developedApps/website/Website";
+import MyWord from "@/components/developedApps/myWord/MyWord";
 
 
 // Vue.config.productionTip = false
@@ -22,6 +28,12 @@ const routes = [
     {path: '/portfolio', component: Portfolio},
     {path: '/contact', component: Contact},
     {path: '/developed-apps', component: DevelopedApps},
+    {path: '/developed-apps/placelytics', component: Placelytics},
+    {path: '/developed-apps/pictile', component: Pictile},
+    {path: '/developed-apps/the-hardest-game', component: TheHardestGame},
+    {path: '/developed-apps/quarantino', component: Quarantino},
+    {path: '/developed-apps/website', component: Website},
+    {path: '/developed-apps/my-word', component: MyWord},
     {path: '/algorithms', component: Algorithms},
     {path: '/hackathons', component: Hackathons},
     {path: '/flutter-stuff', component: FlutterStuff},
@@ -30,7 +42,7 @@ const routes = [
 
 const router = new Router({
     routes: routes,
-    mode: 'history',
+    // mode: 'history',
 });
 
 router.beforeEach((to, from, next) => {

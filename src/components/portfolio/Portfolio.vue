@@ -46,6 +46,9 @@
     </div>
 </template>
 
+<!-- TODO: try to preload images -->
+<!-- TODO: zmniejszyc powierzchnie guzikow, bo sa teraz na cala szerokosc -->
+
 <script>
     import NavBar from "@/components/navBar/NavBar";
 
@@ -59,7 +62,7 @@
 
 <style scoped>
 
-    @media (max-width: 444px) {
+    @media (max-width: 732pt) {
         .group-container {
             border-bottom: 2pt solid #ffc107;
         }
