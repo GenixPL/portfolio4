@@ -31,8 +31,6 @@
 
 <style scoped>
     .main-container {
-        background-color: #ffc107;
-
         margin-top: 16pt;
         margin-left: auto;
         margin-right: auto;
