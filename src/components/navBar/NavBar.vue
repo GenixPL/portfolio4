@@ -28,12 +28,6 @@
 </script>
 
 <style scoped>
-    @media (min-width: 360pt) {
-        #navBar-container {
-            display: flex;
-        }
-    }
-
     #navBar-container {
         background-color: #ffc107;
 
@@ -41,6 +35,8 @@
         position: sticky;
         top: 0;
 
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
 
@@ -51,9 +47,17 @@
     .page-text {
         font-family: cp-mono, serif;
         color: black;
-        padding: 4pt 16pt;
+
+        margin: 4pt;
+
+        width: 100pt;
+        height: 22pt;
 
         transition: color 0.5s ease;
+
+        text-align: center;
+        vertical-align: middle;
+        line-height: 22pt;
     }
 
     .page-text:hover {
