@@ -1,45 +1,38 @@
 <template>
     <div>
 
-        <NavBar :enlarged-position="3"
-                style="position: sticky; top: 0;"/>
+        <NavBar :enlarged-position="3"/>
 
         <div id="groups-container">
 
             <div class="group-container" id="group-1">
                 <div class="group-header">DEVELOPED APPS</div>
-                <router-link class="routerLink" to='/developed-apps'>
-                    <div class="download-button">SEE MORE</div>
-                </router-link>
+                <NavigateButton navigateTo="/developed-apps"/>
             </div>
 
             <div class="group-container" id="group-2">
                 <div class="group-header">ALGORITHMS</div>
-                <router-link class="routerLink" to='/algorithms'>
-                    <div class="download-button">SEE MORE</div>
-                </router-link>
+                <NavigateButton navigateTo="/algorithms"/>
             </div>
 
             <div class="group-container" id="group-3">
                 <div class="group-header">HACKATHONS</div>
-                <router-link class="routerLink" to='/hackathons'>
-                    <div class="download-button">SEE MORE</div>
-                </router-link>
+                <div style="background: cadetblue; width: 100%">
+                    <NavigateButton navigateTo="/hackathons"/>
+                </div>
             </div>
 
             <div class="group-container" id="group-4">
                 <div class="group-header">FLUTTER STUFF</div>
-                <router-link class="routerLink" to='/flutter-stuff'>
-                    <div class="download-button">SEE MORE</div>
-                </router-link>
+                <NavigateButton navigateTo="/flutter-stuff"/>
             </div>
 
-<!--            <div class="group-container" id="group-5">-->
-<!--                <div class="group-header">OTHER</div>-->
-<!--                <router-link class="routerLink" to='/other-articles'>-->
-<!--                    <div class="download-button">SEE MORE</div>-->
-<!--                </router-link>-->
-<!--            </div>-->
+            <!--            <div class="group-container" id="group-5">-->
+            <!--                <div class="group-header">OTHER</div>-->
+            <!--                <router-link class="routerLink" to='/other-articles'>-->
+            <!--                    <div class="download-button">SEE MORE</div>-->
+            <!--                </router-link>-->
+            <!--            </div>-->
 
         </div>
 
@@ -47,14 +40,15 @@
 </template>
 
 <!-- TODO: try to preload images -->
-<!-- TODO: zmniejszyc powierzchnie guzikow, bo sa teraz na cala szerokosc -->
 
 <script>
     import NavBar from "@/components/navBar/NavBar";
+    import NavigateButton from "@/components/common/NavigateButton";
 
     export default {
         name: "Portfolio",
         components: {
+            NavigateButton,
             NavBar,
         },
     }
@@ -103,23 +97,6 @@
         color: white;
 
         margin-bottom: 12pt;
-    }
-
-    .download-button {
-        background: #ffc107;
-        display: inline;
-        align-self: center;
-
-        font-size: 16pt;
-        font-family: cp-mono, serif;
-
-        padding: 4pt 8pt 3pt 8pt;
-
-        transition: background 0.5s ease;
-    }
-
-    .download-button:hover {
-        background: #9e7700;
     }
 
     #groups-container {

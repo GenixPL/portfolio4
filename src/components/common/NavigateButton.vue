@@ -1,14 +1,16 @@
 <template>
-    <router-link class="routerLink" :to=navigateTo>
-        <div class="nav-button">SEE MORE</div>
-    </router-link>
+    <div style="display: inline">
+        <router-link class="routerLink" :to=navigateTo>
+            <div class="nav-button">SEE MORE</div>
+        </router-link>
+    </div>
 </template>
 
 <script>
     export default {
         name: "NavigateButton",
         props: {
-          navigateTo: String,
+            navigateTo: String,
         },
     }
 </script>
