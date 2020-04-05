@@ -5,6 +5,9 @@
         <div class="header-text">Home page with world map</div>
         <div class="header-text">Animated tiles show up</div>
         <div class="header-text">Slide transition</div>
+        <div class="header-text">Clox</div>
+<!-- TODO add ui challenges -->
+
     </div>
 </template>
 

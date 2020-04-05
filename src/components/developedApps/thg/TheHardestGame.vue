@@ -2,15 +2,17 @@
     <div>
         <NavBar />
         <ArticleBanner id="banner"/>
+        <YtPlayer url="https://www.youtube.com/embed/KSW5koz3zkU"/>
     </div>
 </template>
 
 <script>
     import NavBar from "@/components/navBar/NavBar";
     import ArticleBanner from "@/components/common/articles/ArticleBanner";
+    import YtPlayer from "@/components/common/articles/YtPlayer";
     export default {
         name: "TheHardestGame",
-        components: {ArticleBanner, NavBar}
+        components: {YtPlayer, ArticleBanner, NavBar}
     }
 </script>
 

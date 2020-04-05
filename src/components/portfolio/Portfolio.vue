@@ -17,9 +17,7 @@
 
             <div class="group-container" id="group-3">
                 <div class="group-header">HACKATHONS</div>
-                <div style="background: cadetblue; width: 100%">
-                    <NavigateButton navigateTo="/hackathons"/>
-                </div>
+                <NavigateButton navigateTo="/hackathons"/>
             </div>
 
             <div class="group-container" id="group-4">
