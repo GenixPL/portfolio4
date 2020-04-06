@@ -21,7 +21,6 @@
         <LeftHeader text="Lines of code"/>
         <ArticleSmallPaddingText text="Dart: 17897"/>
 
-
         <LeftHeader text="Description" />
         <ArticleText v-bind:text=getPlacelyticsText() />
 

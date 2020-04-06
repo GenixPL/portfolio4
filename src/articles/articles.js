@@ -3,10 +3,10 @@ export default {
         'text': 'An application created for my engineering project. The goal of the whole project was to create a system (backend, mobile, and web) to monitor and analyse places from Google Maps. The purpose of the system was to help us gather information about different places - our own or competitive (in case of business owners) and those of interest to us (in case of ordinary users). We had basic data and reviews taken from Google Maps and our own additional analyses.',
     },
     pictile: {
-        'text': 'Pirctile project',
+        'text': 'A simple application to help you remember things. It consists of giving the user the possibility to: create their own sets (text - picture) and learn by displaying a picture and revealing the text only after clicking. ',
     },
     thg: {
-        'text': 'THG project',
+        'text': 'A simple but difficult puzzle game for smartphones. Its aim is to find the right sequence of moves to get from point A to point B. Making each move is connected with the addition of points, the total number of which must not exceed the allowed threshold.',
     },
     quarantino: {
         'text': 'Quarantino project',
