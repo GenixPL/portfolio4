@@ -23,7 +23,7 @@
         padding-bottom: 24pt;
 
         font-family: cp-mono, serif;
-        font-size: 24pt;
+        font-size: 32pt;
 
         overflow-wrap: break-word;
         word-wrap: break-word;

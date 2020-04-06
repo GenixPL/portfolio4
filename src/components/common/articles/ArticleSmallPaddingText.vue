@@ -8,7 +8,7 @@
 
 <script>
     export default {
-        name: "ArticleCoauthor",
+        name: "ArticleSmallPaddingText",
         props: {
             text: String,
         },

@@ -63,6 +63,7 @@
     .article-text {
         font-family: prime, serif;
         font-size: 14pt;
+        line-height: 16pt;
 
         overflow: hidden;
         text-overflow: ellipsis;

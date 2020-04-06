@@ -4,10 +4,23 @@
         <ArticleBanner id="banner"/>
         <CenteredHeader text="Placelytics"/>
 
+        <DisabledRepoLink text="Link to the repository available on request"/>
+        <DisabledGooglePlayLink text="Link to the app available on request (if backend still works)"/>
 
         <LeftHeader text="Coauthors" />
-        <ArticleCoauthor text="Karol Kłosowski"/>
-        <ArticleCoauthor text="Piotr Pilis"/>
+        <ArticleSmallPaddingText text="Karol Kłosowski"/>
+        <ArticleSmallPaddingText text="Piotr Pilis"/>
+
+        <LeftHeader text="Technologies" />
+        <ArticleSmallPaddingText text="Flutter"/>
+        <ArticleSmallPaddingText text="Firebase Auth"/>
+        <ArticleSmallPaddingText text="Firestore"/>
+        <ArticleSmallPaddingText text="Google Maps"/>
+        <ArticleSmallPaddingText text="Rive"/>
+
+        <LeftHeader text="Lines of code"/>
+        <ArticleSmallPaddingText text="Dart: 17897"/>
+
 
         <LeftHeader text="Description" />
         <ArticleText v-bind:text=getPlacelyticsText() />
@@ -30,7 +43,7 @@
         />
 
         <LeftHeader text="Video" />
-        <ArticleText text="Below is a video showing the application (unfortunately, I didn't find the time to do it better)"/>
+        <ArticleText text="(Unfortunately, I didn't find the time to improve it)"/>
         <YtPlayer url="https://www.youtube.com/embed/h5CSd-B2x0w"/>
 
     </div>
@@ -44,13 +57,17 @@
     import ArticleText from "@/components/common/articles/ArticleText";
     import ArticleList from "@/components/common/articles/ArticleList";
     import LeftHeader from "@/components/common/articles/LeftHeader";
-    import ArticleCoauthor from "@/components/common/articles/ArticleCoauthor";
     import articles from '@/articles/articles';
+    import DisabledRepoLink from "@/components/common/articles/DisabledRepoLink";
+    import ArticleSmallPaddingText from "@/components/common/articles/ArticleSmallPaddingText";
+    import DisabledGooglePlayLink from "@/components/common/articles/DisabledGooglePlayLink";
 
     export default {
         name: "Placelytics",
         components: {
-            ArticleCoauthor,
+            DisabledGooglePlayLink,
+            DisabledRepoLink,
+            ArticleSmallPaddingText,
             LeftHeader,
             ArticleList,
             ArticleText,
