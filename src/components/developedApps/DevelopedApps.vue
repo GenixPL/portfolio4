@@ -6,37 +6,37 @@
 
         <ArticleHeader id="placelytics"
                        title="Placelytics"
-                       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                       v-bind:text=getPlacelyticsText()
                        navigateTo="/developed-apps/placelytics"
         />
 
         <ArticleHeader id="pictile"
                        title="Pictile"
-                       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                       v-bind:text=getPictileText()
                        navigateTo="/developed-apps/pictile"
         />
 
         <ArticleHeader id="thg"
                        title="The Hardest Game"
-                       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                       v-bind:text=getThgText()
                        navigateTo="/developed-apps/the-hardest-game"
         />
 
         <ArticleHeader id="quarantino"
                        title="Quarantino"
-                       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                       v-bind:text=getQuarantinoText()
                        navigateTo="/developed-apps/quarantino"
         />
 
         <ArticleHeader id="website"
                        title="This website"
-                       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                       v-bind:text=getWebisteText()
                        navigateTo="/developed-apps/website"
         />
 
         <ArticleHeader id="my-word"
                        title="MyWord"
-                       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                       v-bind:text=getMyWordText()
                        navigateTo="/developed-apps/my-word"
         />
 
@@ -49,6 +49,7 @@
 <script>
     import NavBar from "@/components/navBar/NavBar";
     import ArticleHeader from "@/components/portfolio/ArticleHeader";
+    import articles from '@/articles/articles';
 
     export default {
         name: "DevelopedApps",
@@ -56,6 +57,26 @@
             ArticleHeader,
             NavBar,
         },
+        methods: {
+            getPlacelyticsText() {
+                return articles.placelytics.text;
+            },
+            getPictileText() {
+                return articles.pictile.text;
+            },
+            getThgText() {
+                return articles.thg.text;
+            },
+            getQuarantinoText() {
+                return articles.quarantino.text;
+            },
+            getWebisteText() {
+                return articles.website.text;
+            },
+            getMyWordText() {
+                return articles.myWord.text;
+            },
+        }
     }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-        <div style="max-width: 600pt; margin: 16pt auto">
+        <div style="max-width: 584pt; margin: 8pt auto;">
             <div class="iframe-container">
 
                 <iframe
