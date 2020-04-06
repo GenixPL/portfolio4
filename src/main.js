@@ -43,6 +43,9 @@ const routes = [
 const router = new Router({
     routes: routes,
     // mode: 'history',
+    scrollBehavior() {
+        document.getElementById('app').scrollIntoView();
+    }
 });
 
 router.beforeEach((to, from, next) => {
