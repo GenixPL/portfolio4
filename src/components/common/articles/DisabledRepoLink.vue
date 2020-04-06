@@ -42,8 +42,6 @@
     #repo-text {
         margin: auto 8pt;
 
-        background: #ffc107;
-
         font-family: prime, serif;
         text-align: left;
     }
