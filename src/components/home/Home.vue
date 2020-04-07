@@ -19,6 +19,7 @@
 </script>
 
 <!-- TODO correct backup fonts in the whole project -->
+<!-- TODO odesparować portfolio od innych artykułów, zrobić z portfolio bardziej prezentacyjną wersję - zdjęcia i filmik i link do artykułu-->
 
 <style scoped>
 

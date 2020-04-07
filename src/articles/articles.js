@@ -9,7 +9,7 @@ export default {
         'text': 'A simple but difficult puzzle game for smartphones. Its aim is to find the right sequence of moves to get from point A to point B. Making each move is connected with the addition of points, the total number of which must not exceed the allowed threshold.',
     },
     quarantino: {
-        'text': 'Quarantino project',
+        'text': 'An application created during a 5-day hackathon to support Polish uniformed services in checking mandatory quarantines and to promote voluntary quarantines for people not covered by mandatory ones. It works on the principle of checking the user\'s location every 15 minutes (in the background) and through several random verifications during the day. This verification involves taking a photo of your face and the same background (rear camera image) each time.',
     },
     website: {
         'text': 'Website project'
