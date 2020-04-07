@@ -12,7 +12,7 @@ export default {
         'text': 'An application created during a 5-day hackathon to support Polish uniformed services in checking mandatory quarantines and to promote voluntary quarantines for people not covered by mandatory ones. It works on the principle of checking the user\'s location every 15 minutes (in the background) and through several random verifications during the day. This verification involves taking a photo of your face and the same background (rear camera image) each time.',
     },
     website: {
-        'text': 'Website project'
+        'text': 'As the idea of having my own website came to my mind, I had to get down to writing one. Its purpose is to present my portfolio, but also to serve as a source of quickly available knowledge (it is known that it is easier to recall things that you once wrote yourself).'
     },
     myWord: {
         'text': 'MyWord project',
