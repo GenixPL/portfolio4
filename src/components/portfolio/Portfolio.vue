@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <NavBar2 :enlarged-position="3"/>
+        <NavBar :enlarged-position="3"/>
 
         <div id="groups-container">
 
@@ -40,14 +40,14 @@
 <!-- TODO: try to preload images -->
 
 <script>
-    // import NavBar from "@/components/navBar/NavBar";
+    import NavBar from "@/components/navBar/NavBar";
     import NavigateButton from "@/components/common/NavigateButton";
-    import NavBar2 from "@/components/navBar/NavBar2";
+
 
     export default {
         name: "Portfolio",
         components: {
-            NavBar2,
+            NavBar,
             NavigateButton,
             // NavBar,
         },
