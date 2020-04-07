@@ -15,6 +15,6 @@ export default {
         'text': 'As the idea of having my own website came to my mind, I had to get down to writing one. Its purpose is to present my portfolio, but also to serve as a source of quickly available knowledge (it is known that it is easier to recall things that you once wrote yourself).'
     },
     myWord: {
-        'text': 'MyWord project',
+        'text': 'I have long wanted to create a good application for language learning. It was supposed to have a fully customizable data set for learning and include some good learning modes. Then came the idea of adding a dictionary to it, because often when I was translating books I had this problem that Google Translate did not allow to segregate saved translations.',
     }
 }

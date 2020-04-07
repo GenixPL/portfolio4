@@ -1,6 +1,7 @@
 <template>
     <div>
         <NavBar/>
+        <CenteredHeader text="WORK IN PROGRESS" />
         <div class="header-text">FLUTTER STUFF</div>
         <div class="header-text">Home page with world map</div>
         <div class="header-text">Animated tiles show up</div>
@@ -13,10 +14,12 @@
 
 <script>
     import NavBar from "@/components/navBar/NavBar";
+    import CenteredHeader from "@/components/common/articles/CenteredHeader";
 
     export default {
         name: "FlutterStuff",
         components: {
+            CenteredHeader,
             NavBar,
         },
     }

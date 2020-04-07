@@ -10,6 +10,7 @@
 
         <LeftHeader text="Technologies" />
         <ArticleSmallPaddingText text="Flutter"/>
+        <ArticleSmallPaddingText text="sqflite"/>
 
         <LeftHeader text="Lines of code"/>
         <ArticleSmallPaddingText text="Dart: 2278"/>

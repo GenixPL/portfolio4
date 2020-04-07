@@ -1,6 +1,7 @@
 <template>
     <div>
         <NavBar/>
+        <CenteredHeader text="WORK IN PROGRESS" />
         <div class="header-text">HACKATHONS</div>
         <div class="article-header">Hack the Crisis (aka Joke)</div>
         <div class="article-header">Facebook</div>
@@ -10,10 +11,12 @@
 
 <script>
     import NavBar from "@/components/navBar/NavBar";
+    import CenteredHeader from "@/components/common/articles/CenteredHeader";
 
     export default {
         name: "Hackathons",
         components: {
+            CenteredHeader,
             NavBar,
         },
     }
