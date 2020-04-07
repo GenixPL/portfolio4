@@ -17,7 +17,6 @@ import Quarantino from "@/components/developedApps/quarantino/Quarantino";
 import Website from "@/components/developedApps/website/Website";
 import MyWord from "@/components/developedApps/myWord/MyWord";
 
-
 // Vue.config.productionTip = false
 
 Vue.use(Router);
