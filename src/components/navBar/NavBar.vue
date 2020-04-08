@@ -82,6 +82,7 @@
 
     #nav {
         position: sticky;
+        z-index: 100;
         top: 0;
         display: flex;
         justify-content: space-between;
