@@ -7,22 +7,22 @@
 
             <div class="group-container" id="group-1">
                 <div class="group-header">DEVELOPED APPS</div>
-                <NavigateButton navigateTo="/developed-apps"/>
+                <NavigateButton navigateTo="/developed-apps" :old-style="true"/>
             </div>
 
             <div class="group-container" id="group-2">
                 <div class="group-header">ALGORITHMS</div>
-                <NavigateButton navigateTo="/algorithms"/>
+                <NavigateButton navigateTo="/algorithms" :old-style="true"/>
             </div>
 
             <div class="group-container" id="group-3">
                 <div class="group-header">HACKATHONS</div>
-                <NavigateButton navigateTo="/hackathons"/>
+                <NavigateButton navigateTo="/hackathons" :old-style="true"/>
             </div>
 
             <div class="group-container" id="group-4">
                 <div class="group-header">FLUTTER STUFF</div>
-                <NavigateButton navigateTo="/flutter-stuff"/>
+                <NavigateButton navigateTo="/flutter-stuff" :old-style="true"/>
             </div>
 
         </div>
@@ -51,7 +51,7 @@
 
     @media (max-width: 732pt) {
         .group-container {
-            border-bottom: 2pt solid #ffc107;
+            border-bottom: 2pt solid #ffb300;
         }
     }
 

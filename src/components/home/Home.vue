@@ -6,21 +6,21 @@
             <Card
                     imgUrl="home/resume.png"
                     header="RESUME"
-                    text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."
+                    text="Basic information, skills, career, summary of main projects and achievements."
                     navigateUrl="/resume"
             />
 
             <Card
                     imgUrl="home/code.png"
                     header="PORTFOLIO"
-                    text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has."
+                    text="Project descriptions, algorithmic tasks, interesting Flutter solutions and other things."
                     navigateUrl="/portfolio"
             />
 
             <Card
                     imgUrl="home/mail.png"
                     header="CONTACT"
-                    text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's."
+                    text="Information on how to contact me."
                     navigateUrl="/CONTACT"
             />
         </div>
@@ -32,7 +32,7 @@
     import HomeHeader from "@/components/home/HomeHeader";
 
     export default {
-        name: "Home2",
+        name: "Home",
         components: {
             HomeHeader,
             Card

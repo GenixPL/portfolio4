@@ -65,7 +65,7 @@
 
     #email-text {
         align-self: center;
-        background-color: #ffc107;
+        background-color: #ffb300;
         padding: 12pt 16pt 10pt;
         font-family: prime, serif;
         font-size: 16pt;

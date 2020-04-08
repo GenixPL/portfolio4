@@ -66,7 +66,7 @@
         top: 0;
         display: flex;
         justify-content: space-between;
-        background: #ffc107;
+        background: #ffb300;
 
         height: 80px;
         width: 100%;
@@ -188,7 +188,7 @@
 
         .page-text {
             font-size: 20px;
-            color: #ffc107;
+            color: #ffb300;
         }
 
         .page-text:hover {

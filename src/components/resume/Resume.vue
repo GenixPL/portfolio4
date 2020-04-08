@@ -40,7 +40,7 @@
     }
 
     .download-button {
-        background: #ffc107;
+        background: #ffb300;
         display: inline;
         align-self: center;
 

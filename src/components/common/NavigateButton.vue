@@ -1,7 +1,7 @@
 <template>
     <div>
         <router-link class="routerLink" :to=navigateTo>
-            <div class="nav-button">SEE MORE</div>
+            <div :class="[ oldStyle ? 'old-style' : 'nav-button']">SEE MORE</div>
         </router-link>
     </div>
 </template>
@@ -11,6 +11,7 @@
         name: "NavigateButton",
         props: {
             navigateTo: String,
+            oldStyle: Boolean,
         },
     }
 </script>
@@ -35,5 +36,22 @@
         color: #ffffff !important;
         background: #ffb300;
         border-color: #ffb300 !important;
+    }
+
+    .old-style {
+        background: #ffb300;
+        display: inline-block;
+        align-self: center;
+
+        font-size: 16pt;
+        font-family: cp-mono, serif;
+
+        padding: 4pt 8pt 3pt 8pt;
+
+        transition: background 0.5s ease;
+    }
+
+    .old-style:hover {
+        background: #9e7700;
     }
 </style>

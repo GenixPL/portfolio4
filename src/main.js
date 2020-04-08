@@ -15,11 +15,12 @@ import TheHardestGame from "@/components/developedApps/thg/TheHardestGame";
 import Quarantino from "@/components/developedApps/quarantino/Quarantino";
 import Website from "@/components/developedApps/website/Website";
 import MyWord from "@/components/developedApps/myWord/MyWord";
+import Home from "@/components/home/Home";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBars} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import Home2 from "@/components/home/Home2";
+
 
 library.add(faBars)
 
@@ -33,7 +34,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(Router);
 
 const routes = [
-    {path: '/', component: Home2},
+    {path: '/', component: Home},
     {path: '/resume', component: Resume},
     {path: '/portfolio', component: Portfolio},
     {path: '/contact', component: Contact},
