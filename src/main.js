@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router';
 import App from './App.vue'
-import Home from "@/components/home/Home";
+// import Home from "@/components/home/Home";
 import Resume from "@/components/resume/Resume";
 import Portfolio from "@/components/portfolio/Portfolio";
 import Contact from "@/components/contact/Contact";
@@ -20,6 +20,7 @@ import MyWord from "@/components/developedApps/myWord/MyWord";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBars} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import Home2 from "@/components/home/Home2";
 
 library.add(faBars)
 
@@ -33,7 +34,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(Router);
 
 const routes = [
-    {path: '/', component: Home},
+    {path: '/', component: Home2},
     {path: '/resume', component: Resume},
     {path: '/portfolio', component: Portfolio},
     {path: '/contact', component: Contact},

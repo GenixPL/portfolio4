@@ -1,5 +1,5 @@
 <template>
-    <div style="display: inline">
+    <div>
         <router-link class="routerLink" :to=navigateTo>
             <div class="nav-button">SEE MORE</div>
         </router-link>
@@ -17,19 +17,23 @@
 
 <style scoped>
     .nav-button {
-        background: #ffc107;
-        display: inline;
-        align-self: center;
+        display: inline-block;
 
         font-size: 16pt;
         font-family: cp-mono, serif;
 
         padding: 4pt 8pt 3pt 8pt;
 
-        transition: background 0.5s ease;
+        transition: 0.3s ease;
+
+        color: #494949 !important;
+        background: #ffffff;
+        border: 4px solid #494949 !important;
     }
 
     .nav-button:hover {
-        background: #9e7700;
+        color: #ffffff !important;
+        background: #ffb300;
+        border-color: #ffb300 !important;
     }
 </style>
