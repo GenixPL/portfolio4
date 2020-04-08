@@ -2,10 +2,14 @@
     <div id="nav">
         <input type="checkbox" id="check">
 
-        <div id="logo">
-            <label>|_|0|_|</label>
-            <label>|_|_|0|</label>
-            <label>|0|0|0|</label>
+        <div id="left-container">
+            <div id="logo">
+                <label>|_|0|_|</label>
+                <label>|_|_|0|</label>
+                <label>|0|0|0|</label>
+            </div>
+
+            <div id="name">NieDZiAłek</div>
         </div>
 
         <ul>
@@ -61,6 +65,21 @@
         box-sizing: border-box;
     }
 
+    #left-container {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #name {
+        padding-top: 4pt;
+        font-family: kontanter, sans-serif;
+        font-size: 18pt;
+        letter-spacing: 1pt;
+        display: none;
+    }
+
     #nav {
         position: sticky;
         top: 0;
@@ -68,7 +87,7 @@
         justify-content: space-between;
         background: #ffb300;
 
-        height: 80px;
+        height: 60px;
         width: 100%;
     }
 
@@ -79,7 +98,7 @@
 
     #nav ul li {
         display: inline-block;
-        line-height: 80px;
+        line-height: 60px;
         margin: 0 5px;
     }
 
@@ -91,7 +110,7 @@
 
         font-family: cp-mono, serif;
         font-weight: bold;
-        font-size: 12pt;
+        font-size: 10pt;
     }
 
     .page-text {
@@ -117,8 +136,8 @@
     .check-btn {
         font-size: 30px;
         float: right;
-        line-height: 80px;
-        margin-right: 40px;
+        line-height: 60px;
+        margin-right: 20px;
         display: none;
     }
 
@@ -126,13 +145,9 @@
         display: none;
     }
 
-    @media (min-width: 900px) {
-        #logo{
-            padding-left: 100px;
-        }
-
-        #nav ul {
-            margin-right: 40px;
+    @media (min-width: 920px) {
+        #name {
+            display: block;
         }
     }
 
@@ -151,17 +166,20 @@
     }
 
     @media (max-width: 620px) {
-        #nav {
-            height: 60px;
+        #logo {
+            padding: 0 20px;
         }
 
         #logo label {
             font-size: 10pt;
         }
 
+        #name {
+            display: block;
+        }
+
         .check-btn {
             display: block;
-            line-height: 60px;
         }
 
         input[type=checkbox]:checked ~ ul {
@@ -198,8 +216,13 @@
         .enlarged-text {
             font-size: 28px;
         }
-
-
     }
+
+    @media (max-width: 340px) {
+        #name {
+            display: none;
+        }
+    }
+
 
 </style>
