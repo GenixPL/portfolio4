@@ -65,8 +65,11 @@
     @media (min-width: 732pt) {
         .group-container {
             width: 340pt;
-            border: 2pt solid #ffc107;
             margin: 8pt;
+
+            -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
         }
 
         #groups-container {

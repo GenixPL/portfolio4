@@ -25,6 +25,8 @@ library.add(faBars)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
+// home page
+// slides show
 
 // Vue.config.productionTip = false
 
