@@ -139,6 +139,11 @@
         line-height: 60px;
         margin-right: 20px;
         display: none;
+        cursor: pointer;
+    }
+
+    .check-btn:hover {
+        color: #404040;
     }
 
     #check {

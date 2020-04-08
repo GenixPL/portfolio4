@@ -10,10 +10,10 @@
                        navigateTo="/developed-apps/placelytics"
         />
 
-        <ArticleHeader id="pictile"
-                       title="Pictile"
-                       v-bind:text=getPictileText()
-                       navigateTo="/developed-apps/pictile"
+        <ArticleHeader id="quarantino"
+                       title="Quarantino"
+                       v-bind:text=getQuarantinoText()
+                       navigateTo="/developed-apps/quarantino"
         />
 
         <ArticleHeader id="thg"
@@ -22,10 +22,10 @@
                        navigateTo="/developed-apps/the-hardest-game"
         />
 
-        <ArticleHeader id="quarantino"
-                       title="Quarantino"
-                       v-bind:text=getQuarantinoText()
-                       navigateTo="/developed-apps/quarantino"
+        <ArticleHeader id="pictile"
+                       title="Pictile"
+                       v-bind:text=getPictileText()
+                       navigateTo="/developed-apps/pictile"
         />
 
         <ArticleHeader id="website"
