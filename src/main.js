@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router';
 import App from './App.vue'
-// import Home from "@/components/home/Home";
 import Resume from "@/components/resume/Resume";
 import Portfolio from "@/components/portfolio/Portfolio";
 import Contact from "@/components/contact/Contact";

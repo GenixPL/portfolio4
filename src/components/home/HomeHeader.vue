@@ -15,7 +15,8 @@
                 <div id="rive-icon" class="outer-button-icon"></div>
             </a>
             <a href="https://www.goodreads.com/user/show/86850107-lukasz" target="_blank">
-                <div id="gg-icon" class="outer-button-icon"></div>
+                <div id="gr-icon" class="outer-button-icon">
+                </div>
             </a>
         </div>
     </div>
@@ -28,24 +29,30 @@
 </script>
 
 <style scoped>
+    @media (max-width: 1020px) {
+        #header-container {
+            margin-top: 32pt;
+        }
+    }
+
     #header-container {
         width: 100vw;
-        height: 108pt;
 
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: #ffc107;
     }
 
     #name-header {
-        color: black;
+        color: #ffb300;
         letter-spacing: 4pt;
         padding-left: 4pt; /* to compensate for letter spacing */
         font-family: kontanter, sans-serif;
+        font-size: 32pt;
     }
 
     #icons-container {
+        margin-top: 12pt;
         height: 32pt;
         display: grid;
         grid-template-columns: repeat(4, 32pt);
@@ -59,21 +66,25 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #yt-icon {
-        background-image: url("../../assets/home/yt_icon.svg");
+        background-image: url("../../assets/home/yt.svg");
     }
 
     #github-icon {
-        background-image: url("../../assets/home/github_icon.svg");
+        background-image: url("../../assets/home/github.svg");
     }
 
-    #gg-icon {
-        background-image: url("../../assets/home/gg_icon.svg");
+    #gr-icon {
+        background-image: url("../../assets/home/goodreads.svg");
     }
 
     #rive-icon {
-        background-image: url("../../assets/home/rive_icon.svg");
+        background-image: url("../../assets/home/rive.svg");
     }
 </style>

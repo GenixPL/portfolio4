@@ -25,13 +25,6 @@
                 <NavigateButton navigateTo="/flutter-stuff"/>
             </div>
 
-            <!--            <div class="group-container" id="group-5">-->
-            <!--                <div class="group-header">OTHER</div>-->
-            <!--                <router-link class="routerLink" to='/other-articles'>-->
-            <!--                    <div class="download-button">SEE MORE</div>-->
-            <!--                </router-link>-->
-            <!--            </div>-->
-
         </div>
 
     </div>
@@ -120,10 +113,6 @@
 
     #group-4 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/portfolio/flutter.jpg");
-    }
-
-    #group-5 {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/home/background.jpg");
     }
 
 </style>

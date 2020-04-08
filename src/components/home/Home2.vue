@@ -1,5 +1,7 @@
 <template>
     <div class="main-container">
+        <HomeHeader/>
+
         <div class="cards-container">
             <Card
                     imgUrl="home/resume.png"
@@ -27,10 +29,12 @@
 
 <script>
     import Card from "@/components/common/Card";
+    import HomeHeader from "@/components/home/HomeHeader";
 
     export default {
         name: "Home2",
         components: {
+            HomeHeader,
             Card
         },
     }
@@ -44,6 +48,7 @@
         background: #303030;
 
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
