@@ -1,7 +1,7 @@
 <template>
     <div>
         <router-link class="routerLink" :to=navigateTo>
-            <div :class="[ oldStyle ? 'old-style' : 'nav-button']">SEE MORE</div>
+            <div :class="[ light ? 'nav-button' : 'old-style']">SEE MORE</div>
         </router-link>
     </div>
 </template>
@@ -11,7 +11,7 @@
         name: "NavigateButton",
         props: {
             navigateTo: String,
-            oldStyle: Boolean,
+            light: Boolean,
         },
     }
 </script>

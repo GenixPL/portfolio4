@@ -11,7 +11,7 @@
         <div class="face face2">
             <div class="content">
                 <p>{{text}}</p>
-                <NavigateButton :navigateTo='navigateUrl'/>
+                <NavigateButton :navigateTo='navigateUrl' :light="true"/>
             </div>
         </div>
 
