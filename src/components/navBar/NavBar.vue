@@ -3,11 +3,13 @@
         <input type="checkbox" id="check">
 
         <div id="left-container">
-            <div id="logo">
-                <label>|_|0|_|</label>
-                <label>|_|_|0|</label>
-                <label>|0|0|0|</label>
-            </div>
+            <router-link to="/">
+                <div id="logo">
+                    <label>|_|0|_|</label>
+                    <label>|_|_|0|</label>
+                    <label>|0|0|0|</label>
+                </div>
+            </router-link>
 
             <div id="name">NieDZiAłek</div>
         </div>
@@ -112,6 +114,11 @@
         font-family: cp-mono, serif;
         font-weight: bold;
         font-size: 10pt;
+    }
+
+    #logo label {
+        cursor: pointer;
+        color: black;
     }
 
     .page-text {
