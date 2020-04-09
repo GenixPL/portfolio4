@@ -1,43 +1,49 @@
 <template>
-    <div>
+    <div id="main-container">
         <NavBar/>
 
         <div class="header-text">DEVELOPED APPS</div>
 
-        <ArticleHeader id="placelytics"
-                       title="Placelytics"
-                       v-bind:text=getPlacelyticsText()
-                       navigateTo="/developed-apps/placelytics"
+        <ArticleCard
+                title="Placelytics"
+                :text='getPlacelyticsText()'
+                path="/developed-apps/placelytics"
+                imgPath="articles/placelytics/placelytics-banner.jpg"
         />
 
-        <ArticleHeader id="quarantino"
-                       title="Quarantino"
-                       v-bind:text=getQuarantinoText()
-                       navigateTo="/developed-apps/quarantino"
+        <ArticleCard
+                title="Quarantino"
+                :text='getQuarantinoText()'
+                path="/developed-apps/quarantino"
+                imgPath="articles/quarantino/quarantino-banner.jpg"
         />
 
-        <ArticleHeader id="thg"
-                       title="The Hardest Game"
-                       v-bind:text=getThgText()
-                       navigateTo="/developed-apps/the-hardest-game"
+        <ArticleCard
+                title="The Hardest Game"
+                :text=getThgText()
+                path="/developed-apps/the-hardest-game"
+                imgPath="articles/thg/thg-banner.jpg"
         />
 
-        <ArticleHeader id="pictile"
-                       title="Pictile"
-                       v-bind:text=getPictileText()
-                       navigateTo="/developed-apps/pictile"
+        <ArticleCard
+                title="Pictile"
+                :text=getPictileText()
+                path="/developed-apps/pictile"
+                imgPath="articles/pictile/pictile-banner.jpg"
         />
 
-        <ArticleHeader id="website"
-                       title="This website"
-                       v-bind:text=getWebisteText()
-                       navigateTo="/developed-apps/website"
+        <ArticleCard
+                title="This website"
+                :text=getWebisteText()
+                path="/developed-apps/website"
+                img-path="articles/website/website-banner.jpg"
         />
 
-        <ArticleHeader id="my-word"
-                       title="MyWord"
-                       v-bind:text=getMyWordText()
-                       navigateTo="/developed-apps/my-word"
+        <ArticleCard
+                title="MyWord"
+                :text=getMyWordText()
+                path="/developed-apps/my-word"
+                imgPath="articles/myWord/myword-banner.jpg"
         />
 
         <!--   TODO: add   -->
@@ -48,13 +54,13 @@
 
 <script>
     import NavBar from "@/components/navBar/NavBar";
-    import ArticleHeader from "@/components/portfolio/ArticleHeader";
     import articles from '@/articles/articles';
+    import ArticleCard from "@/components/common/ArticleCard";
 
     export default {
         name: "DevelopedApps",
         components: {
-            ArticleHeader,
+            ArticleCard,
             NavBar,
         },
         methods: {
@@ -81,35 +87,17 @@
 </script>
 
 <style scoped>
+    #main-container {
+        min-height: 100vh;
+        background: #303030;
+    }
+
     .header-text {
         font-family: cp-mono, serif;
-        font-size: 20pt;
+        font-size: 24pt;
+        color: #ffb300;
 
-        margin-top: 16pt;
-    }
-
-    #placelytics {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/articles/placelytics/placelytics-banner.jpg");
-    }
-
-    #pictile {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/articles/pictile/pictile-banner.jpg");
-    }
-
-    #thg {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/articles/thg/thg-banner.jpg");
-    }
-
-    #quarantino {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/articles/quarantino/quarantino-banner.jpg");
-    }
-
-    #website {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/articles/website/website-banner.jpg");
-    }
-
-    #my-word {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/articles/myWord/myword-banner.jpg");
+        margin-top: 36pt;
     }
 
 </style>
