@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="main-container">
 
         <NavBar :enlarged-position="3"/>
 
@@ -49,30 +49,34 @@
 
 <style scoped>
 
-    @media (max-width: 732pt) {
+    #main-container {
+        background: #303030;
+        min-height: 100vh;
+    }
+
+    @media (max-width: 440pt) {
         .group-container {
             border-bottom: 2pt solid #ffb300;
         }
     }
 
-    @media (min-width: 732pt) {
+    @media (min-width: 440pt) {
         .group-container {
             width: 340pt;
-            margin: 8pt;
+            margin: 20pt;
 
-            -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+            box-sizing: border-box;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
         }
 
         #groups-container {
             max-width: 1080pt;
-            margin: 10pt auto;
+            margin: 0 auto;
 
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-content: center;
-            flex-wrap: wrap;
+            align-items: center;
         }
     }
 
@@ -93,10 +97,6 @@
         color: white;
 
         margin-bottom: 12pt;
-    }
-
-    #groups-container {
-
     }
 
     #group-1 {
