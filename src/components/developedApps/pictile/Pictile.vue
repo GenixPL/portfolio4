@@ -19,6 +19,18 @@
         <ArticleText v-bind:text=getText() />
         <ArticleText text="I made it for my sister, who needed such a tool to learn biology, and the existing solutions did not satisfy her. I wanted the application to be 100% free, so I didn't add any possibility to store data except for the phone. However, I implemented data storage in such a way that it would be kept after uninstalling the application, in case of any accidental deletion (user can delete files using a file manager)."/>
 
+        <div style="max-width: 500pt; margin: 16pt auto;">
+            <vueper-slides class="no-shadow" style="width: 80%; margin: 0 auto" fixed-height="500px" :infinite="false"
+                           :touchable="false" arrows-outside>
+                <vueper-slide
+                        v-for="(slide, i) in slides"
+                        :key="i"
+                        :image='slide.image'
+                        style="background-size: contain; background-repeat: no-repeat;"
+                />
+            </vueper-slides>
+        </div>
+
     </div>
 </template>
 
@@ -33,6 +45,9 @@
     import EnabledRepoLink from "@/components/common/articles/EnabledRepoLink";
     import EnabledGooglePlayLink from "@/components/common/articles/EnabledGooglePlayLink";
 
+    import {VueperSlides, VueperSlide} from 'vueperslides'
+    import 'vueperslides/dist/vueperslides.css'
+
     export default {
         name: "pictile",
         components: {
@@ -44,12 +59,27 @@
             ArticleText,
             ArticleBanner,
             NavBar,
+            VueperSlides,
+            VueperSlide,
         },
         methods: {
             getText() {
               return articles.pictile.text;
             },
-        }
+        },
+        data: function () {
+            return {
+                slides: [
+                    {image: require('@/assets/articles/pictile/1.jpg'),},
+                    {image: require('@/assets/articles/pictile/2.jpg'),},
+                    {image: require('@/assets/articles/pictile/3.jpg'),},
+                    {image: require('@/assets/articles/pictile/4.jpg'),},
+                    {image: require('@/assets/articles/pictile/5.jpg'),},
+                    {image: require('@/assets/articles/pictile/6.jpg'),},
+                    {image: require('@/assets/articles/pictile/7.jpg'),},
+                ],
+            }
+        },
     }
 </script>
 
