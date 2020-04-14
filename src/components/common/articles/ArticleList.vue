@@ -51,12 +51,6 @@
         -moz-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
-    }
-
-    .article-list-child {
-
         line-height: 14pt;
-
-
     }
 </style>

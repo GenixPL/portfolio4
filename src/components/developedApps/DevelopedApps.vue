@@ -86,6 +86,7 @@
 <style scoped>
     #main-container {
         min-height: 100vh;
+        padding-bottom: 20px;
         background: #303030;
     }
 
