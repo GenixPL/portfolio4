@@ -26,8 +26,6 @@ library.add(faBars)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
-// TODO: bug with nav bar and slides
-
 // Vue.config.productionTip = false
 
 Vue.use(Router);

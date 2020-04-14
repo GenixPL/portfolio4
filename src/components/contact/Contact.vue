@@ -28,9 +28,6 @@
     }
 </script>
 
-<!-- TODO possibly add emailing form -->
-<!-- TODO add copy to clipboard -->
-
 <style scoped>
     #contact-container {
         width: 100%;

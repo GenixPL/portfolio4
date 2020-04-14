@@ -46,9 +46,6 @@
                 imgPath="articles/myWord/myword-banner.jpg"
         />
 
-        <!--   TODO: add   -->
-        <!--        <ArticleHeader title="My first app"/>-->
-
     </div>
 </template>
 

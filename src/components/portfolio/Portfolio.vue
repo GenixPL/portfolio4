@@ -30,8 +30,6 @@
     </div>
 </template>
 
-<!-- TODO: try to preload images -->
-
 <script>
     import NavBar from "@/components/navBar/NavBar";
     import NavigateButton from "@/components/common/NavigateButton";

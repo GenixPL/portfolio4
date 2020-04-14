@@ -19,8 +19,6 @@
         <ArticleText v-bind:text=getText() />
         <ArticleText text="I made it for my sister, who needed such a tool to learn biology, and the existing solutions did not satisfy her. I wanted the application to be 100% free, so I didn't add any possibility to store data except for the phone. However, I implemented data storage in such a way that it would be kept after uninstalling the application, in case of any accidental deletion (user can delete files using a file manager)."/>
 
-<!--   TODO add photos     -->
-
     </div>
 </template>
 

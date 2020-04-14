@@ -34,8 +34,6 @@
     </div>
 </template>
 
-<!-- TODO switch text emotes to images -->
-
 <script>
     import NavBar from "@/components/navBar/NavBar";
     import ArticleBanner from "@/components/common/articles/ArticleBanner";
