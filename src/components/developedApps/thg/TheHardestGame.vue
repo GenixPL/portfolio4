@@ -17,6 +17,18 @@
         <LeftHeader text="Description"/>
         <ArticleText v-bind:text=getText() />
 
+        <div style="max-width: 500pt; margin: 16pt auto;">
+            <vueper-slides class="no-shadow" style="width: 80%; margin: 0 auto" fixed-height="500px" :infinite="false"
+                           :touchable="false" arrows-outside>
+                <vueper-slide
+                        v-for="(slide, i) in slides"
+                        :key="i"
+                        :image='slide.image'
+                        style="background-size: contain; background-repeat: no-repeat;"
+                />
+            </vueper-slides>
+        </div>
+
         <LeftHeader text="My part"/>
         <ArticleText text="My only interference in the project was graphic improvements. Rafał published a post on the forum about his project and I found the game so cool that I couldn't leave it in the same graphic state as it was - very simple elements and lack of support for: different sizes of screens and horizontal game."/>
 
@@ -38,6 +50,9 @@
     import ArticleSmallPaddingText from "@/components/common/articles/ArticleSmallPaddingText";
     import EnabledGooglePlayLink from "@/components/common/articles/EnabledGooglePlayLink";
 
+    import {VueperSlides, VueperSlide} from 'vueperslides'
+    import 'vueperslides/dist/vueperslides.css'
+
     export default {
         name: "TheHardestGame",
         components: {
@@ -49,12 +64,26 @@
             YtPlayer,
             ArticleBanner,
             NavBar,
+            VueperSlides,
+            VueperSlide,
         },
         methods: {
             getText() {
                 return articles.thg.text;
             }
-        }
+        },
+        data: function () {
+            return {
+                slides: [
+                    {image: require('@/assets/articles/thg/1.jpg'),},
+                    {image: require('@/assets/articles/thg/2.jpg'),},
+                    {image: require('@/assets/articles/thg/3.jpg'),},
+                    {image: require('@/assets/articles/thg/4.jpg'),},
+                    {image: require('@/assets/articles/thg/5.jpg'),},
+                    {image: require('@/assets/articles/thg/6.jpg'),},
+                ],
+            }
+        },
     }
 </script>
 
