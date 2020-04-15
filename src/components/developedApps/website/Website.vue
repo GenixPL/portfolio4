@@ -14,9 +14,9 @@
         <ArticleText
                 text="So I started to write this page in Flutter, at the beginning I was doing the design too similar to mobile apps, so I didn't like it all the time. Additionally, I started to have problems with performance, but life would be too easy if I combined it with the shortcomings of Flutter Web at this stage."/>
 
-        <div style="max-width: 500pt; margin: 16pt auto;">
-            <vueper-slides class="no-shadow" style="width: 80%; margin: 0 auto" fixed-height="500px" :infinite="false"
-                           :touchable="false" arrows-outside>
+        <div style="width:100%; max-width: 500pt; margin: 16pt auto;">
+            <vueper-slides class="no-shadow" style="width: calc(100% - 112px); margin: 0 auto;" fixed-height="500px" :infinite="false"
+                           :touchable="false" arrows-outside :bullets="false">
                 <vueper-slide
                         v-for="(slide, i) in slides1"
                         :key="i"
@@ -31,9 +31,9 @@
         <ArticleText
                 text="I liked the second version much more. I had no problem writing more advanced views, because I already knew Flutter well. However, because I've been writing the second version only on my stronger computer, after firing it on a weaker computer and phone, I quickly came to the conclusion that Flutter Web still has a long way to go (and it is possible that the end will not be the happiest one :( ). So the decision was made to rewrite it in a proper web framework."/>
 
-        <div style="max-width: 500pt; margin: 16pt auto;">
-            <vueper-slides class="no-shadow" style="width: 80%; margin: 0 auto" fixed-height="500px" :infinite="false"
-                           :touchable="false" arrows-outside>
+        <div style="width:100%; max-width: 500pt; margin: 16pt auto;">
+            <vueper-slides class="no-shadow" style="width: calc(100% - 112px); margin: 0 auto;" fixed-height="500px" :infinite="false"
+                           :touchable="false" arrows-outside :bullets="false">
                 <vueper-slide
                         v-for="(slide, i) in slides2"
                         :key="i"

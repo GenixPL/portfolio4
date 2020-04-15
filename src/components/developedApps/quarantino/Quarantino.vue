@@ -33,9 +33,9 @@
         <ArticleText
                 text="Knowing the situation in other countries, we decided to create an application whose main purpose was to help in checking the people under mandatory quarantine, because as the epidemic worsens, it becomes an unsolvable problem. Unfortunately, during the second day of programming, life reminded us of itself, because it turned out that the Polish government was about to release exactly the same application. Seeing first reactions to the government version and knowing the quality of other government products, we decided to finish our prototype. We were all impressed by how much we were able to create in such a short time (as a group of 7 strangers)."/>
 
-        <div style="max-width: 500pt; margin: 16pt auto;">
-            <vueper-slides class="no-shadow" style="width: 80%; margin: 0 auto" fixed-height="500px" :infinite="false"
-                           :touchable="false" arrows-outside>
+        <div style="width:100%; max-width: 500pt; margin: 16pt auto;">
+            <vueper-slides class="no-shadow" style="width: calc(100% - 112px); margin: 0 auto;" fixed-height="500px" :infinite="false"
+                           :touchable="false" arrows-outside :bullets="false">
                 <vueper-slide
                         v-for="(slide, i) in slides"
                         :key="i"

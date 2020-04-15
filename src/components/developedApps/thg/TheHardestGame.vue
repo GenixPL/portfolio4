@@ -17,9 +17,9 @@
         <LeftHeader text="Description"/>
         <ArticleText v-bind:text=getText() />
 
-        <div style="max-width: 500pt; margin: 16pt auto;">
-            <vueper-slides class="no-shadow" style="width: 80%; margin: 0 auto" fixed-height="500px" :infinite="false"
-                           :touchable="false" arrows-outside>
+        <div style="width:100%; max-width: 500pt; margin: 16pt auto;">
+            <vueper-slides class="no-shadow" style="width: calc(100% - 112px); margin: 0 auto;" fixed-height="500px" :infinite="false"
+                           :touchable="false" arrows-outside :bullets="false">
                 <vueper-slide
                         v-for="(slide, i) in slides"
                         :key="i"
