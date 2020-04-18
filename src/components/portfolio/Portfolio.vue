@@ -10,6 +10,11 @@
                 <NavigateButton navigateTo="/developed-apps"/>
             </div>
 
+            <div class="group-container" id="group-4">
+                <div class="group-header">FLUTTER STUFF</div>
+                <NavigateButton navigateTo="/flutter-stuff"/>
+            </div>
+
             <div class="group-container" id="group-2">
                 <div class="group-header">ALGORITHMS</div>
                 <NavigateButton navigateTo="/algorithms"/>
@@ -18,11 +23,6 @@
             <div class="group-container" id="group-3">
                 <div class="group-header">HACKATHONS</div>
                 <NavigateButton navigateTo="/hackathons"/>
-            </div>
-
-            <div class="group-container" id="group-4">
-                <div class="group-header">FLUTTER STUFF</div>
-                <NavigateButton navigateTo="/flutter-stuff"/>
             </div>
 
         </div>

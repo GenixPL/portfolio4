@@ -20,6 +20,7 @@ import Home from "@/components/home/Home";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBars} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import ButtonsLayout from "@/components/flutterStuff/buttonsLayout/ButtonsLayout";
 
 
 library.add(faBars)
@@ -45,6 +46,7 @@ const routes = [
     {path: '/algorithms', component: Algorithms},
     {path: '/hackathons', component: Hackathons},
     {path: '/flutter-stuff', component: FlutterStuff},
+    {path: '/flutter-stuff/home-buttons-layout', component: ButtonsLayout},
     {path: '/other-articles', component: OtherArticles},
 ];
 

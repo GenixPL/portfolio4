@@ -1,41 +1,54 @@
 <template>
-    <div>
+    <div id="main-container">
         <NavBar/>
-        <CenteredHeader text="WORK IN PROGRESS" />
         <div class="header-text">FLUTTER STUFF</div>
-        <div class="header-text">Home page with world map</div>
-        <div class="header-text">Animated tiles show up</div>
-        <div class="header-text">Slide transition</div>
-        <div class="header-text">Clox</div>
+
+        <ArticleCard
+                title="Home buttons layout"
+                :text='getButtonsLayoutText()'
+                path="/flutter-stuff/home-buttons-layout"
+                imgPath="articles/buttonsLayout/buttons-layout-banner.png"
+        />
+
+<!--        TODO -->
+<!--        <div class="header-text">Animated tiles show up</div>-->
+<!--        <div class="header-text">Slide transition</div>-->
+<!--        <div class="header-text">Clox</div>-->
 
     </div>
 </template>
 
 <script>
     import NavBar from "@/components/navBar/NavBar";
-    import CenteredHeader from "@/components/common/articles/CenteredHeader";
+    import ArticleCard from "@/components/common/ArticleCard";
+    import articles from "@/articles/articles";
 
     export default {
         name: "FlutterStuff",
         components: {
-            CenteredHeader,
+            ArticleCard,
             NavBar,
+        },
+        methods: {
+            getButtonsLayoutText() {
+                return articles.homeButtonsLayout.text;
+            },
         },
     }
 </script>
 
 <style scoped>
-    .header-text {
-        font-family: cp-mono, serif;
-        font-size: 20pt;
-
-        margin-top: 16pt;
+    #main-container {
+        min-height: 100vh;
+        padding-bottom: 20px;
+        background: #303030;
     }
 
-    .article-header {
+    .header-text {
         font-family: cp-mono, serif;
-        font-size: 16pt;
+        font-size: 24pt;
+        color: #ffb300;
 
-        margin-top: 16pt;
+        margin-top: 36pt;
     }
 </style>

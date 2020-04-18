@@ -16,5 +16,8 @@ export default {
     },
     myWord: {
         'text': 'I have long wanted to create a good application for language learning. It was supposed to have a fully customizable data set for learning and include some good learning modes. Then came the idea of adding a dictionary to it, because often when I was translating books I had this problem that Google Translate did not allow to segregate saved translations.',
-    }
+    },
+    homeButtonsLayout: {
+      'text': 'In this article I\'ll show you how to make a menu with the button layout shown in the picture. You can easily add a background to it and quickly adjust it, because I left the code on a very basic level.',
+    },
 }
